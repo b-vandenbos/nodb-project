@@ -1,0 +1,270 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.movie-side {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-picture {
+    background: rgb(40,40,41);
+    height: 77vh;
+    overflow: hidden;
+    display: flex;
+}
+
+    .movie-picture-image {
+        width: 100%;
+    }
+
+    .movie-picture-button {
+        background: none;
+        opacity: .5;
+        color: white;
+        width: 75px;
+        font-size: 56px;
+        position: absolute;
+        align-self: center;
+        border: none;
+    }
+
+.movie-info {
+    background: rgb(40,40,41);
+    height: 23vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .movie-info-left {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+
+    .movie-info-left > h1 {
+        font-size: 2.4vw;
+        font-family: 'Archivo', sans-serif;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: white;
+        margin: 0;
+        margin-left: 5px;
+      }
+
+    .movie-info-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+        .movie-info-right-text {
+            font-family: 'Open Sans Light', sans-serif;
+            color: rgb(249,249,249);
+            text-align: right;
+            align-self: flex-end;
+            font-size: .9vw;
+            margin: 0;
+            line-height: 1.5em;
+            border-top: 1px solid white;
+            padding-top: 5px;
+        }
+    
+        .movie-info-right-genre {
+            font-family: 'Open Sans Light', sans-serif;
+            color: white;
+            width: 100%;
+            text-align: right;
+            align-self: flex-end;
+            font-size: .75vw;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+.post-side {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-read {
+    background: rgb(249,249,249);
+    height: 77vh;
+}
+
+    .post-read-searchbar {
+        width: 97%;
+        height: 5%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .post-read-searchbar-label {
+            font-size: .9vw;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            margin-left: 5px;
+            color: black;
+        }
+
+        .post-read-searchbar-input {
+            width: 59%;
+            background: white;
+            margin-left: 0;
+            font-family: 'Open Sans Light', sans-serif;
+            font-size: .9vw;
+        }
+
+    .post-read-field {
+        height: 90%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background: none;
+    }
+
+        .post {
+            background: rgb(249,249,249);
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            width: 97%;
+            margin: 0 auto 10px;
+        }
+
+            .post-info-row {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+                .post-info-label {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-left: 5px;
+                }
+
+                    .date-field {
+                        width: 80%;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        font-weight: 700;
+                        font-size: .7vw;
+                        text-transform: uppercase;
+                    }
+
+                    .title-field {
+                        width: 80%;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        font-weight: 700;
+                        font-size: 1.2vw;
+                        text-transform: uppercase;
+                    }
+                
+                .edit-button {
+                    border: none;
+                    font-size: 1.2vw;
+                    background: none;
+                    color: rgb(40,40,41);
+                    border-radius: 10px;
+                    height: 50%;
+                    align-self: center;
+                    margin: 5px;
+                }
+                    
+                      .edit-button:hover {
+                        color: rgb(119,136,153);
+                      }
+                    
+                      .edit-button:focus {
+                        outline: 0;
+                      }
+
+            .post-text-row {
+                width: 80%;
+                margin: 0 0 5px 5px;
+                font-size: .7vw;
+                font-family: 'Open Sans Light', sans-serif;
+            }
+
+.post-create {
+    background: rgb(40,40,41);
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+}
+
+    .post-create-text {
+        width: 90%;
+        height: 15vh;
+        margin-top: 15px;
+        align-self: center;
+        font-family: 'Open Sans Light', sans-serif;
+        font-size: .9vw;
+    }
+
+    .post-create-info {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .post-create-info-left {
+        width: 100%;
+        align-items: center;
+      }
+    
+      .movie-title-label {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: .9vw;
+        margin: 0;
+        color: white;
+      }
+      
+      .movie-title-input {
+        width: 70%;
+        background: white;
+        height: 3vh;
+        margin-left: 0;
+        font-family: 'Open Sans Light', sans-serif;
+        font-size: 14px;
+      }
+
+      .add-button {
+        border: 1px solid white;
+        height: 4vh;
+        width: 60%;
+        font-size: .8vw;
+        letter-spacing: .3em;
+        text-transform: uppercase;
+        background: none;
+        color: white;
+      }
+    
+         .add-button:hover {
+            background: rgb(249,249,249);
+            color: black;
+         }
+    
+        .add-button:focus {
+            outline: 0;
+        }
+    
+      textarea {
+        resize: none;
+      }
