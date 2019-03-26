@@ -14,7 +14,7 @@ class MoviePicture extends Component {
     render() {
         let {movie, next, previous} = this.props;
         return (
-        <div className="movie-picture w3-display-container">
+        <div className="movie-picture w3-display-container w3-animate-fading">
             <button className="w3-button w3-display-left movie-picture-button" onClick={previous}><FontAwesomeIcon icon="chevron-left" /></button>
             <img className="movie-picture-image" src={`https://image.tmdb.org/t/p/w1280${movie.backdrop_path}`} alt=""/>
             <button className="w3-button w3-display-right movie-picture-button" onClick={next}><FontAwesomeIcon icon="chevron-right" /></button>

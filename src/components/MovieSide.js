@@ -44,7 +44,7 @@ class MovieSide extends Component {
         .then(results => this.setState({list: results.data}))
         .catch(err => console.log('error in loading movies: ', err));
     
-        this.interval = setInterval( () => this.slide(), 3000);
+        this.interval = setInterval( () => this.slide(), 10000);
       }
 
     render() {
